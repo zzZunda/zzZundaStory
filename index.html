@@ -51,10 +51,10 @@
         <h1>私のシンプルなプロフィール - zzZundaStory</h1>
         <p>こんにちは！これはCloudflare Pagesで作成した私の創作サイトです。</p>
         <ul>
-            <li><strong>名前:</strong> ずんだ</li>
-            <li><strong>趣味:</strong> AIを使ったコンテンツ制作</li>
-            <li><strong>好きなこと:</strong> 新しい物語を想像すること</li>
-            <li><strong>一言:</strong> 皆さんに楽しんでいただけるような作品作りを目指しています！</li>
+            <li><strong>名前:</strong> zzZundamon</li>
+            <li><strong>こだわり:</strong> ずんだもん</li>
+            <li><strong>好きなこと:</strong> きまま生活</li>
+            <li><strong>一言:</strong> 適度に緊張感をもってコンテンツ制作がんばります！</li>
             <li><a href="https://sora.chatgpt.com/profile/zzzundamon" target="_blank">私のSora2アカウントです。</a> (個別動画は誰でもみれますが、Profileの閲覧にはsora.chatgptでのログインが必要になります)</li>
         </ul>
 
@@ -62,19 +62,53 @@
 
         <h2>私の創作活動について</h2>
         <p>これまでに**約250本**のショート動画を作成してきました。これらの作品は、私の創作の基盤となっています。</p>
-        
+        <p>インデックスを付けたり、ずんだもん指数を表示させてみやすくしたいです。</p>
 
 
         <h3>ストーリーを紡ぐ原点</h3>
         <p>部隊がジャングルの奥地で物資が補給され続けるという、この動画から新しい物語を紡いでいきたいと考えています。<br>
-        <video 
-    src="https://pub-da1dd7c4a83f48b4bc6da89b03cecb42.r2.dev/19700121_1841_691402efab708191a86b2602a89f276a.mp4" 
-    width="300" 
-    autoplay 
-    loop 
-    muted 
-    playsinline>
+<!-- ▼▼▼ 音声トグル機能付きビデオのコードブロック ▼▼▼ -->
+<div>
+    <!-- 1. 動画プレーヤー本体 -->
+    <video 
+        id="mySoraVideo"  <!-- JavaScriptがこの動画を見つけるためのID -->
+        src="https://pub-da1dd7c4a83f48b4bc6da89b03cecb42.r2.dev/19700121_1841_691402efab708191a86b2602a89f276a.mp4" 
+        width="300" 
+        autoplay 
+        loop 
+        muted 
+        playsinline>
     </video>
+
+    <br> <!-- ビデオとボタンの間に少しスペースを空ける -->
+
+    <!-- 2. 音声切り替えボタン -->
+    <button id="muteButton">音声 ON</button>
+</div>
+
+<!-- 3. ボタンを機能させるためのJavaScript -->
+<script>
+    // ページ内の要素を取得して、変数に保存する
+    const videoPlayer = document.getElementById('mySoraVideo');
+    const muteToggleButton = document.getElementById('muteButton');
+
+    // ボタンがクリックされた時に実行する処理を定義する
+    muteToggleButton.addEventListener('click', function() {
+        // もし、現在ミュート(muted)なら
+        if (videoPlayer.muted) {
+            // ミュートを解除する
+            videoPlayer.muted = false;
+            // ボタンの文字を「音声 OFF」に変更する
+            muteToggleButton.textContent = '音声 OFF';
+        } else {
+            // ミュートにする
+            videoPlayer.muted = true;
+            // ボタンの文字を「音声 ON」に変更する
+            muteToggleButton.textContent = '音声 ON';
+        }
+    });
+</script>
+<!-- ▲▲▲ ここまでがビデオのコードブロック ▲▲▲ --></br>
         まめ部隊: <a href="https://sora.chatgpt.com/p/s_691402efab708191a86b2602a89f276a" target="_blank">Sora AI Story Start</a></p>
 
         <h3>モチベーションの源</h3>
