@@ -67,50 +67,18 @@
 
         <h3>ストーリーを紡ぐ原点</h3>
         <p>部隊がジャングルの奥地で物資が補給され続けるという、この動画から新しい物語を紡いでいきたいと考えています。<br>
-<!-- ▼▼▼ 音声トグル機能付きビデオのコードブロック ▼▼▼ -->
-<div>
-    <!-- 1. 動画プレーヤー本体 -->
+            
+</br>
+        まめ部隊: <a href="https://sora.chatgpt.com/p/s_691402efab708191a86b2602a89f276a" target="_blank">Sora AI Story Start</a></p>
     <video 
-        id="mySoraVideo"  <!-- JavaScriptがこの動画を見つけるためのID -->
+        <video 
         src="https://pub-da1dd7c4a83f48b4bc6da89b03cecb42.r2.dev/19700121_1841_691402efab708191a86b2602a89f276a.mp4" 
         width="300" 
         autoplay 
         loop 
-        muted 
-        playsinline>
+        playsinline
+        controls> <!-- controls属性を追加すると、再生/一時停止、音量などのUIが表示されます -->
     </video>
-
-    <br> <!-- ビデオとボタンの間に少しスペースを空ける -->
-
-    <!-- 2. 音声切り替えボタン -->
-    <button id="muteButton">音声 ON</button>
-</div>
-
-<!-- 3. ボタンを機能させるためのJavaScript -->
-<script>
-    // ページ内の要素を取得して、変数に保存する
-    const videoPlayer = document.getElementById('mySoraVideo');
-    const muteToggleButton = document.getElementById('muteButton');
-
-    // ボタンがクリックされた時に実行する処理を定義する
-    muteToggleButton.addEventListener('click', function() {
-        // もし、現在ミュート(muted)なら
-        if (videoPlayer.muted) {
-            // ミュートを解除する
-            videoPlayer.muted = false;
-            // ボタンの文字を「音声 OFF」に変更する
-            muteToggleButton.textContent = '音声 OFF';
-        } else {
-            // ミュートにする
-            videoPlayer.muted = true;
-            // ボタンの文字を「音声 ON」に変更する
-            muteToggleButton.textContent = '音声 ON';
-        }
-    });
-</script>
-<!-- ▲▲▲ ここまでがビデオのコードブロック ▲▲▲ --></br>
-        まめ部隊: <a href="https://sora.chatgpt.com/p/s_691402efab708191a86b2602a89f276a" target="_blank">Sora AI Story Start</a></p>
-
         <h3>モチベーションの源</h3>
         <p>これまでずんだもん作品を見て補給ばかりでしたが、想像や妄想が簡単に動画化できるツールの登場で供給もできるようになりました。<br>
         <a href="https://sora.chatgpt.com/p/s_68e9dc615b1481918859f488751ddcaf" target="_blank">Sora AI Motivation Origin</a></p>
@@ -120,6 +88,9 @@
         <h2>リンク</h2>
         <p>他のソーシャルメディアや関連リンクはこちらでまとめています。</p>
         <p><a href="https://linktr.ee/zzzundamon" target="_blank">私のLinktreeを見る</a></p>
+        <hr>
+        <p>Zundamon is a character developed by SSS LLC.
+VOICEVOX: ずんだもん (Zundamon)</p>
 
     </div>
 </body>
